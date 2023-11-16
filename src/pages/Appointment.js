@@ -20,7 +20,7 @@ const Appointment = () => {
             title: <a href="">Application List</a>,
           },
           {
-            title: 'An Application123',
+            title: 'An Application',
           },
         ]}
       />
