@@ -1,0 +1,98 @@
+.topbar {
+    flex: 0 0 auto;
+    display: flex;
+    width: 75vw;
+    height: 4.5rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+  }
+  
+  .topbar__search input {
+    width: 27rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    background: #F6F6F6;
+    /* cancel borderline */
+    border: none;
+    /* 在选中input时也不不要边框 */
+    /* outline: 2px solid #6B47BA; */
+    outline: none;
+  }
+
+  .topbar__search input:focus {
+    outline: 2px solid #6B47BA;
+  }
+
+  .topbar__info {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .topbar__icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .topbar__icons a {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .topbar__profile {
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .topbar__profile .avator {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.375rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6.25rem;
+    border: .0625rem solid #7A757F;
+    background: #EADDFF;
+
+    color: #21005D;
+
+    text-align: center;
+    /* body/Secondary/medium */
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.25rem; /* 142.857% */
+    letter-spacing: 0.01563rem;
+  }
+  
+  .topbar__profile span {
+    font-weight: bold;
+    display: flex;
+    height: 2.75rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #1C1B1E;
+
+    /* body/primary/regular */
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.03125rem;
+  }

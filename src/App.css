@@ -1,0 +1,69 @@
+* {
+  font-family: Roboto;
+}
+
+body {
+  width: 90rem;
+  height: 48.75rem;
+  margin: 0; /* Optionally, remove default margin for body */
+  overflow: hidden; /* Optionally, hide overflow to prevent scrolling */
+}
+
+:root {
+  --main-border-color: #6750A4;
+  --font-size: 16px;
+}
+
+.App {
+  text-align: center;
+  background: #FAFAFB;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ant-input:focus {
+  border-color: --main-border-color;
+}
+
+/* 修改下拉框（Select）选中边框颜色 */
+.ant-select-focused .ant-select-selector {
+  border-color: --main-border-color;
+}
+
+/* 修改日期选择器（DatePicker）选中边框颜色 */
+.ant-picker-focused .ant-picker-input > input {
+  border-color: --main-border-color;
+}
