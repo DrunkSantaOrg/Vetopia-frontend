@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?no7xld');
+  src:  url('fonts/icomoon.eot?no7xld#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?no7xld') format('truetype'),
+    url('fonts/icomoon.woff?no7xld') format('woff'),
+    url('fonts/icomoon.svg?no7xld#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

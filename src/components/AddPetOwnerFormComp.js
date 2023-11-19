@@ -10,7 +10,7 @@ import {
   ConfigProvider,
   Space,
 } from 'antd'
-import './AddPetFormComp.css'
+import './AddPetOwnerFormComp.css'
 
 const { Option } = Select
 
@@ -26,7 +26,7 @@ const weightSelectAfter = (
   </Select>
 )
 
-const AddPetFormComp = () => {
+const AddPetOwnerFormComp = () => {
   const onFinish = (values) => {
     console.log('Received values:', values)
   }
@@ -52,101 +52,22 @@ const AddPetFormComp = () => {
         >
           <Row className="form-Row" gutter={[16, 16]}>
             <Col span={12} className="form-column">
-              <div className="form-label">Name</div>
+              <div className="form-label">First Name</div>
               <Form.Item
                 className="addPetFormItem"
-                name="name"
-                rules={[{ required: true, message: 'Please input Name!' }]}
+                name="firstName"
+                rules={[{ required: true, message: 'Please input First Name!' }]}
               >
                 <Input />
               </Form.Item>
             </Col>
             <Col span={12} className="form-column">
-              <div className="form-label">Species</div>
+              <div className="form-label">First Name</div>
               <Form.Item
+                name="lastName"
                 className="addPetFormItem"
-                rules={[{ required: true, message: 'Please select Species!' }]}
+                rules={[{ required: true, message: 'Please input Last Name!' }]}
                 labelAlign="top"
-              >
-                <Select>
-                  <Option value="dog">Dog</Option>
-                  <Option value="cat">Cat</Option>
-                </Select>
-              </Form.Item>
-            </Col>
-          </Row>
-
-          <Row className="form-Row" gutter={[16, 16]}>
-            <Col span={12} className="form-column">
-              <div className="form-label">Breed</div>
-              <Form.Item
-                className="addPetFormItem"
-                name="breed"
-                rules={[{ required: true, message: 'Please select Breed!' }]}
-              >
-                <Select>{/* Add breed options */}</Select>
-              </Form.Item>
-            </Col>
-            <Col span={12} className="form-column">
-              <div className="form-label">Date of birth</div>
-              <Form.Item
-                className="addPetFormItem"
-                name="dob"
-                rules={[
-                  { required: true, message: 'Please select Date of birth!' },
-                ]}
-              >
-                <DatePicker className="addPetFormItem-datepicker" />
-              </Form.Item>
-            </Col>
-          </Row>
-
-          <Row className="form-Row" gutter={[16, 16]}>
-            <Col span={12} className="form-column">
-              <div className="form-label">Gender</div>
-              <Form.Item
-                className="addPetFormItem"
-                name="gender"
-                rules={[{ required: true, message: 'Please select Gender!' }]}
-              >
-                <Select>
-                  <Option value="male">Male</Option>
-                  <Option value="female">Female</Option>
-                </Select>
-              </Form.Item>
-            </Col>
-            <Col span={12} className="form-column">
-              <div className="form-label">Weight</div>
-              <Form.Item
-                className="addPetFormItem"
-                name="weight"
-                rules={[{ required: true, message: 'Please input Weight!' }]}
-              >
-                <Input addonAfter={weightSelectAfter} />
-              </Form.Item>
-            </Col>
-          </Row>
-
-          <Row className="form-Row" gutter={[16, 16]}>
-            <Col span={12} className="form-column">
-              <div className="form-label">Age</div>
-              <Form.Item
-                className="addPetFormItem"
-                name="age"
-                rules={[{ required: true, message: 'Please input age!' }]}
-              >
-                <Input />
-              </Form.Item>
-            </Col>
-
-            <Col span={12} className="form-column">
-              <div className="form-label">Color</div>
-              <Form.Item
-                className="addPetFormItem"
-                name="color"
-                rules={[
-                  { required: true, message: 'Please write Color!' },
-                ]}
               >
                 <Input />
               </Form.Item>
@@ -158,14 +79,86 @@ const AddPetFormComp = () => {
               <div className="form-label">Phone Number</div>
               <Form.Item
                 className="addPetFormItem"
-                name="microchipNumber"
-                rules={[{ required: true, message: 'Please input age!' }]}
+                name="phoneNumber"
+                rules={[{ required: true, message: 'Please input phoneNumber!' }]}
+              >
+                <Input />
+              </Form.Item>
+            </Col>
+            <Col span={12} className="form-column">
+              <div className="form-label">Email</div>
+              <Form.Item
+                className="addPetFormItem"
+                name="email"
+                rules={[
+                  { required: true, message: 'Please input email!' },
+                ]}
+              >
+                <Input />
+              </Form.Item>
+            </Col>
+          </Row>
+
+          <Row className="form-Row" gutter={[16, 16]}>
+            <Col span={12} className="form-column">
+              <div className="form-label">City</div>
+              <Form.Item
+                className="addPetFormItem"
+                name="city"
+                rules={[{ required: true, message: 'Please input City!' }]}
+              >
+                <Input />
+              </Form.Item>
+            </Col>
+            <Col span={12} className="form-column">
+              <div className="form-label">Province</div>
+              <Form.Item
+                className="addPetFormItem"
+                name="province"
+                rules={[{ required: true, message: 'Please input province!' }]}
+              >
+                <Input />
+              </Form.Item>
+            </Col>
+          </Row>
+
+          <Row className="form-Row" gutter={[16, 16]}>
+            <Col span={12} className="form-column">
+              <div className="form-label">Mailing Address</div>
+              <Form.Item
+                className="addPetFormItem"
+                name="mailingAddress"
+                rules={[{ required: true, message: 'Please input Mailing Address!' }]}
               >
                 <Input />
               </Form.Item>
             </Col>
 
             <Col span={12} className="form-column">
+              <div className="form-label">Billing Address</div>
+              <Form.Item
+                className="addPetFormItem"
+                name="billingAddress"
+                rules={[{ required: true, message: 'Please write Billing Address!' }]}
+              >
+                <Input />
+              </Form.Item>
+            </Col>
+          </Row>
+
+          <Row className="form-Row" gutter={[16, 16]}>
+            <Col span={12} className="form-column">
+              <div className="form-label">postal</div>
+              <Form.Item
+                className="addPetFormItem"
+                name="postal"
+                rules={[{ required: true, message: 'Please input postal!' }]}
+              >
+                <Input />
+              </Form.Item>
+            </Col>
+
+            {/* <Col span={12} className="form-column">
               <div className="form-label">Insurance Number</div>
               <Form.Item
                 className="addPetFormItem"
@@ -176,10 +169,10 @@ const AddPetFormComp = () => {
               >
                 <Input />
               </Form.Item>
-            </Col>
+            </Col> */}
           </Row>
 
-          <Row className="form-Row" gutter={[16, 16]}>
+          {/* <Row className="form-Row" gutter={[16, 16]}>
             <Col span={24} className="form-column">
               <div className="form-label">Neutered/Spayed?</div>
               <Form.Item
@@ -195,7 +188,7 @@ const AddPetFormComp = () => {
                 </Radio.Group>
               </Form.Item>
             </Col>
-          </Row>
+          </Row> */}
 
           {/* <Row className="form-Row">
         <Col span={24}>
@@ -215,4 +208,4 @@ const AddPetFormComp = () => {
   )
 }
 
-export default AddPetFormComp
+export default AddPetOwnerFormComp

@@ -9,6 +9,8 @@ import Appointment from './pages/Appointment';
 import AddPet from './pages/AddPet';
 import './App.css';
 import ShowPet from './pages/ShowPet';
+import Setting from './pages/Settingspage';
+import EditProfile from './pages/EditProfile';
 
 function App()  {
   return (
@@ -20,6 +22,8 @@ function App()  {
             <Route path="/appointment" element={<Appointment />} />
             <Route path='/health-records/add-pet' element={<AddPet />} />
             <Route path='/health-records/show-pet' element={<ShowPet />} />
+            <Route path='/settings' element={<Setting />} />
+            <Route path='/settings/edit-profile' element={<EditProfile />} />
           </Routes>
     </Router>
   );
