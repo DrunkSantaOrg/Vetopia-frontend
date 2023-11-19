@@ -17,6 +17,10 @@ const Topbar = () => {
           <Link to="/notifications">
             <span role="img" aria-label="Notifications Icon">🔔</span>
           </Link>
+
+          <Link to="/settings">
+            <span role="img" aria-label="settings Icon">settings</span>
+          </Link>
         </div>
 
         <div className="topbar__profile">
