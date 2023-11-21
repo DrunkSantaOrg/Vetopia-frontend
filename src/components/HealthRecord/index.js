@@ -1,11 +1,11 @@
 import React from 'react'
 import { Router, Route, Routes, Link } from 'react-router-dom';
-import './HealthRecordComp.css';
+import './HealthRecord.css';
 import { Breadcrumb } from 'antd';
 import { useLocation } from 'react-router-dom';
 
 
-const HealthRecordComp = () => {
+const HealthRecord = () => {
   const location = useLocation();
   
   const titlelist = location.pathname.slice(1).split('/');
@@ -13,26 +13,7 @@ const HealthRecordComp = () => {
   titlelist[titlelist.length - 1] = titlelist[titlelist.length - 1].replace(/-/g, '');
   return (
     <div class="main-container">
-      <div className="dashboardContent__header">
-        <Breadcrumb className="naviInfo"
-          items={[
-            {
-              title: 'Home',
-            },
-            // use map to render the breadcrumb
-            ...titlelist.map((title, index) => {
-              return {
-                title: <a href="">{title}</a>,
-              }
-            })
-          ]}
-        />
-        <div className="headName">
-          {titlelist[titlelist.length - 1].charAt(0).toUpperCase() +
-            titlelist[titlelist.length - 1].slice(1)}
-            {/* 去除/符号*/}
-        </div>
-      </div>
+      
       <div class="content">
         <div class="image-wrapper">
           <img
@@ -45,7 +26,7 @@ const HealthRecordComp = () => {
             one!
           </div>
         </div>
-        <Link to="/health-records/add-pet" class="add-pet-form">
+        <Link to={'add-pet'} class="add-pet-form">
           <div class="add-pet-container">
             <img
               loading="lazy"
@@ -62,4 +43,4 @@ const HealthRecordComp = () => {
 
 
 
-export default HealthRecordComp;
+export default HealthRecord;

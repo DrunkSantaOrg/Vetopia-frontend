@@ -3,10 +3,9 @@
   flex-direction: row;
 
   width: 75vw;
-  height: 792px;
   flex-shrink: 0;
 
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background: #fff;
 
   box-shadow: .25rem .25rem 1rem .5625rem rgba(239, 239, 239, 0.25);
@@ -23,7 +22,7 @@
   background: #fff;
   border-right: #eaeaea .0625rem solid;
 
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 
 .settings-main .second-nav-bar .second-nav-bar-item {
@@ -45,7 +44,7 @@
 
   width: 60vw;
 
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
 }
 
 .settings-main .maincontent .maincontent-title {
@@ -54,23 +53,24 @@
   justify-content: space-between;
 
   width: 100%;
-  height: 24px;
+  height: 1.5rem;
 
   color: var(--font-primary, #1c1b1e);
   /* title/medium */
   font-family: Roboto;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px; /* 127.273% */
+  line-height: 1.75rem; /* 127.273% */
 }
 
 .settings-main .maincontent .maincontent-title .edit-button {
+  text-decoration: none;
   display: flex;
-  padding: 10px 24px 10px 16px;
+  padding: .625rem 1.5rem .625rem 1rem;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: .5rem;
 
   align-self: stretch;
 
@@ -79,11 +79,11 @@
   color: var(--m-3-sys-light-on-primary, #fff);
   text-align: center;
   font-family: Arial;
-  font-size: 14px;
+  font-size: .875rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 157.143% */
-  letter-spacing: .1px;
+  line-height: 1.375rem; /* 157.143% */
+  letter-spacing: .0063rem;
 }
 
 .settings-main .maincontent .header {
@@ -97,16 +97,16 @@
 
 .settings-main .maincontent .header .avatar {
   display: flex;
-  width: 100px;
-  height: 100px;
-  padding: 6px;
+  width: 6.25rem;
+  height: 6.25rem;
+  padding: .375rem;
   margin-right: 2vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
 
-  border-radius: 100px;
+  border-radius: 6.25rem;
   border: .0625rem solid #7a757f;
 
   background: #eaddff;
@@ -116,17 +116,17 @@
   text-align: center;
   /* headline/h2/regular */
   font-family: Roboto;
-  font-size: 45px;
+  font-size: 2.8125rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 52px; /* 115.556% */
+  line-height: 3.25rem; /* 115.556% */
 }
 
 .settings-main .maincontent .header .head-info {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: .5rem;
 }
 
 .settings-main .maincontent .header .head-info .head-name {
@@ -134,22 +134,22 @@
 
   /* body/primary/bold */
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 150% */
-  letter-spacing: .5px;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: .0313rem;
 }
 
 .settings-main .maincontent .header .head-info .pet-owner {
   color: var(--font-medium-dark, #5f6377);
   /* label/primary/regular */
   font-family: Roboto;
-  font-size: 12px;
+  font-size: .75rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 133.333% */
-  letter-spacing: .5px;
+  line-height: 1rem; /* 133.333% */
+  letter-spacing: .0313rem;
 }
 
 .settings-main .maincontent .header .head-info .pet-owner-name {
@@ -160,11 +160,11 @@
   color: var(--font-primary, #1c1b1e);
   /* label/primary/regular */
   font-family: Roboto;
-  font-size: 12px;
+  font-size: .75rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 133.333% */
-  letter-spacing: .5px;
+  line-height: 1rem; /* 133.333% */
+  letter-spacing: .0313rem;
 }
 
 /* 选第二个盒子 */
@@ -172,13 +172,13 @@
 .settings-main .maincontent .header .head-info .pet-owner-name-item2 {
   /* be a div box */
 
-  padding-left: 3.2px;
+  padding-left: .2rem;
 }
 
 .settings-main .maincontent .main-info {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 
   width: 100%;
   padding: 1.5vh 0;
@@ -200,18 +200,18 @@
   color: var(--font-primary, #1c1b1e);
   /* body/primary/medium */
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: .5px;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: .0313rem;
 }
 
 .settings-main .maincontent .main-info .personalinfo .personalinfo-items-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .settings-main
@@ -238,11 +238,11 @@
   color: var(--font-medium-dark, #5f6377);
   /* body/Secondary/regular */
   font-family: Roboto;
-  font-size: 14px;
+  font-size: .875rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
-  letter-spacing: .2501px;
+  line-height: 1.25rem; /* 142.857% */
+  letter-spacing: .0156rem;
 }
 
 
@@ -263,18 +263,18 @@
     color: var(--font-primary, #1c1b1e);
     /* body/primary/medium */
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
-    letter-spacing: .5px;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: .0313rem;
   }
   
   .settings-main .maincontent .main-info .addressinfo .addressinfo-items-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 1.5rem;
   }
   
   .settings-main
@@ -325,9 +325,9 @@
     color: var(--font-medium-dark, #5f6377);
     /* body/Secondary/regular */
     font-family: Roboto;
-    font-size: 14px;
+    font-size: .875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 142.857% */
-    letter-spacing: .2501px;
+    line-height: 1.25rem; /* 142.857% */
+    letter-spacing: .0156rem;
   }

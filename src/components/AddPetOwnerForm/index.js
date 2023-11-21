@@ -10,7 +10,7 @@ import {
   ConfigProvider,
   Space,
 } from 'antd'
-import './AddPetOwnerFormComp.css'
+import './AddPetOwnerForm.css'
 
 const { Option } = Select
 
@@ -26,7 +26,7 @@ const weightSelectAfter = (
   </Select>
 )
 
-const AddPetOwnerFormComp = () => {
+const AddPetOwnerForm = () => {
   const onFinish = (values) => {
     console.log('Received values:', values)
   }
@@ -208,4 +208,4 @@ const AddPetOwnerFormComp = () => {
   )
 }
 
-export default AddPetOwnerFormComp
+export default AddPetOwnerForm

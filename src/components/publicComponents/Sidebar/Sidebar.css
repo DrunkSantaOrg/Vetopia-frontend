@@ -3,7 +3,7 @@
     width: 15vw;
     height: 100vh;
     z-index: 1;
-    
+    padding: 0.75rem 1.25rem;
     background-color: #f1f1f1;
     overflow-x: hidden;
     padding-top: 1.25rem;
@@ -83,11 +83,13 @@
     position: absolute;
     bottom: 1rem;
     display: flex;
+    margin-left: 1rem;
     margin-bottom: 1rem;
     width: 12.5rem;
     padding: 0.75rem;
     align-items: center;
     gap: 1rem;
+    padding: 0.75rem;
     border-radius: 0.25rem;
 
     color: #332D41;
@@ -101,3 +103,8 @@
     letter-spacing: 0.03125rem;
 
 }
+
+.sidebar .logout .icon-Logout {
+    font-size: 1.5rem;
+}
+
