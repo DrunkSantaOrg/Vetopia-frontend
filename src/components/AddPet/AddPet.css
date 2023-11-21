@@ -1,4 +1,5 @@
 .addpet-details {
+  position: relative;
   border-radius: 0.5rem;
   box-shadow: 4px 4px 16px 9px rgba(239, 239, 239, 0.25);
   background-color: #fff;
@@ -6,7 +7,6 @@
   flex-direction: column;
   align-items: start;
   padding: 1.5rem 1.5rem;
-  flex: auto;
 }
 @media (max-width: 991px) {
   .addpet-details {
@@ -16,7 +16,6 @@
 .Avatar {
   display: flex;
   margin-top: 32px;
-  margin-bottom: 32px;
   width: 299px;
   max-width: 100%;
   justify-content: space-between;
@@ -28,29 +27,12 @@
   }
 }
 .avatar-img {
-  display: flex;
-  width: 6.25rem;
-  height: 6.25rem;
-  padding: 0.375rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-
-  border-radius: 6.25rem;
-  border: 1px solid #7a757f;
-
-  background: #eaddff;
-
-  color: #21005d;
-
-  text-align: center;
-  /* headline/h2/regular */
-  font-family: Roboto;
-  font-size: 2.8125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 3.25rem; /* 115.556% */
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 100px;
+  overflow: hidden;
+  max-width: 100%;
 }
 .avatar-change {
   color: var(--link-link, #207fe4);
@@ -77,10 +59,9 @@
   width: 100%;
 }
 
-.dashboardContent__header {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 32px;
+.create-button {
+  position: absolute;
+  top: -3.5rem;
+  right: 1.5rem;
 }
+

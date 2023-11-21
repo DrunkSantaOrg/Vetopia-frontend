@@ -1,10 +1,10 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
+import Sidebar from "/src/components/publicComponents/Sidebar";
+import Topbar from "/src/components/publicComponents/Topbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
-import AddPetComp from "../components/AddPetComp";
+import AddPet from "/src/components/AddPet";
 import "./Dashboard.css";
 
 

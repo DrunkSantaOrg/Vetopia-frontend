@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Topbar.css';
+
 const Topbar = () => {
   return (
     <div className="topbar">
@@ -10,16 +11,16 @@ const Topbar = () => {
       
       <div className="topbar__info">
         <div className="topbar__icons">
-          <Link to="/mail">
-            <span role="img" aria-label="Mail Icon">📧</span>
+          <Link to={'mail'}>
+            <span role="img" aria-label="Mail Icon" className='icon-Message'></span>
           </Link>
 
-          <Link to="/notifications">
-            <span role="img" aria-label="Notifications Icon">🔔</span>
+          <Link to={'notifications'}>
+            <span role="img" aria-label="Notifications Icon" className='icon-Notifications'></span>
           </Link>
 
-          <Link to="/settings">
-            <span role="img" aria-label="settings Icon">settings</span>
+          <Link to={'settings'}>
+            <span role="img" aria-label="settings Icon" className='icon-Settings_filled'></span>
           </Link>
         </div>
 

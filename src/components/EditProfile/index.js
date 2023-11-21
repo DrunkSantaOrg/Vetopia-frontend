@@ -1,7 +1,7 @@
 import React from 'react'
-import './EditProfileComp.css'
-import AddPetOwnerComp from './AddPetOwnerComp'
-const EditProfileComp = () => {
+import './EditProfile.css'
+import AddPetOwner from '../AddPetOwner'
+const EditProfile = () => {
   const secNavBarList = [
     'My Profile',
     'Notification',
@@ -15,9 +15,9 @@ const EditProfileComp = () => {
           return <div className="second-nav-bar-item">{item}</div>
         })}
       </div>
-      <AddPetOwnerComp/>
+      <AddPetOwner/>
     </div>
   )
 }
 
-export default EditProfileComp
+export default EditProfile

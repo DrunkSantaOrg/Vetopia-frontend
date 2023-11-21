@@ -1,10 +1,10 @@
 import React from 'react'
-import AddPetOwnerFormComp from './AddPetOwnerFormComp'
+import AddPetOwnerForm from '../AddPetOwnerForm'
 import { useLocation } from 'react-router-dom'
 import { Breadcrumb, Button, Flex } from 'antd'
 
-import './AddPetOwnerComp.css'
-const AddPetOwnerComp = () => {
+import './AddPetOwner.css'
+const AddPetOwner = () => {
   
   return (
     <div class="addpet-details">
@@ -16,10 +16,10 @@ const AddPetOwnerComp = () => {
           <div class="avatar-change">Change image</div>
           <div class="avatar-remove">Remove</div>
         </div>
-        <AddPetOwnerFormComp />
+        <AddPetOwnerForm />
       </div>
     </div>
   )
 }
 
-export default AddPetOwnerComp
+export default AddPetOwner

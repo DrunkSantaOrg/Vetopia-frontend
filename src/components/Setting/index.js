@@ -1,10 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './SettingComp.css'
-
-
-
-
+import './Setting.css'
 
 const SettingComp = () => {
   const secNavBarList = [
@@ -23,7 +19,9 @@ const SettingComp = () => {
       <div className="maincontent">
         <div className="maincontent-title">
           <div className="maincontent-title-item">My Profile</div>
-          <Link to="/settings/edit-profile" className="edit-button">Edit</Link>
+          <Link to={'edit-profile'} className="edit-button">
+            <span className='icon-Edit'></span>
+            Edit</Link>
         </div>
         <div className="header">
           <div className="avatar">

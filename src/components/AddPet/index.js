@@ -1,9 +1,12 @@
 import React from 'react'
-import AddPetFormComp from './AddPetFormComp'
+import AddPetForm from '../AddPetForm'
 import { useLocation } from 'react-router-dom'
 import { Breadcrumb, Button, Flex } from 'antd'
 
-import './AddPetComp.css'
+// import 当前文件夹的AddPet.module.css
+import './AddPet.css'
+
+
 const AddPetComp = () => {
   let isFilledForm = false
   const location = useLocation()
@@ -16,32 +19,11 @@ const AddPetComp = () => {
   console.log(titlelist)
   return (
     <div class="addpet-details">
-      <div className="dashboardContent__header">
-        <div className="left_item">
-          <Breadcrumb
-            className="naviInfo"
-            items={[
-              {
-                title: 'Home',
-              },
-              // use map to render the breadcrumb
-              ...titlelist.map((title, index) => {
-                return {
-                  title: <a href="">{title}</a>,
-                }
-              }),
-            ]}
-          />
-          <div className="headName">
-            {titlelist[titlelist.length - 1].charAt(0).toUpperCase() +
-              titlelist[titlelist.length - 1].slice(1)}
-          </div>
-        </div>
         {/* create a div box if form is not filled then create disable button else create a button can be clicked*/}
-        <div className="right_item">
+        <div className="create-button">
           <Button disabled={!isFilledForm} type="primary">Create profile</Button>
         </div>
-      </div>
+      
       <div className="formbox">
         <div class="Avatar">
           <img
@@ -52,7 +34,7 @@ const AddPetComp = () => {
           <div class="avatar-change">Change image</div>
           <div class="avatar-remove">Remove</div>
         </div>
-        <AddPetFormComp />
+        <AddPetForm />
       </div>
     </div>
   )
