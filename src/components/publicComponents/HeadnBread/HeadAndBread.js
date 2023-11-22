@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Breadcrumb } from 'antd'
 
-import './HeadnBread.css'
+import './HeadAndBread.css'
 
 const HeadnBread = () => {
   const location = useLocation()

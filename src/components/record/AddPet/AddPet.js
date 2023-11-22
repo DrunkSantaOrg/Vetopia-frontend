@@ -1,5 +1,5 @@
 import React from 'react'
-import AddPetForm from '../AddPetForm'
+import AddPetForm from '../AddPetForm/AddPetForm'
 import { useLocation } from 'react-router-dom'
 import { Breadcrumb, Button, Flex } from 'antd'
 
