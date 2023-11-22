@@ -1,24 +1,23 @@
 import React from 'react'
 import AddPetOwnerForm from '../AddPetOwnerForm/AddPetOwnerForm'
-import { useLocation } from 'react-router-dom'
-import { Breadcrumb, Button, Flex } from 'antd'
 
 import './AddPetOwner.css'
-const AddPetOwner = () => {
-  
+
+const AddPetOwner = ({petOwner}) => {
+
   return (
-    <div class="addpet-details">
-      <div className="formbox">
-        <div class="Avatar">
-          <div className="avatar-img">
-            AB
+      <div class="addpet-details">
+        <div className="formbox">
+          <div class="Avatar">
+            <div className="avatar-img">
+              {petOwner.firstName[0].toUpperCase() + petOwner.lastName[0].toUpperCase()}
+            </div>
+            <div class="avatar-change">Change image</div>
+            <div class="avatar-remove">Remove</div>
           </div>
-          <div class="avatar-change">Change image</div>
-          <div class="avatar-remove">Remove</div>
+          {petOwner && <AddPetOwnerForm petOwner={petOwner}/>}
         </div>
-        <AddPetOwnerForm />
       </div>
-    </div>
   )
 }
 

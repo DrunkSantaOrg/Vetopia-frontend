@@ -23,23 +23,23 @@ import '../../styles/global.css'
 
 const HomePage = () => {
   return (
-    <div className="main">
-      <Sidebar />
-      <div className="mainContent">
-        <Topbar />
-        <HeadnBread />
-        <Routes>
-          <Route path="" element={<Navigate to="dashboard" />} />
-          <Route path="dashboard" element={<DashboardContent />} />
-          <Route path="health-records" element={<HealthRecord />} />
-          <Route path="health-records/add-pet" element={<AddPet />} />
-          <Route path="appointment" element={<Appointment />} />
-          <Route path="settings" element={<Setting />} />
-          <Route path="settings/edit-profile" element={<EditProfile />} />
-        </Routes>
+      <div className="main">
+        <Sidebar/>
+        <div className="mainContent">
+          <Topbar/>
+          <HeadnBread/>
+          <Routes>
+            <Route path="" element={<Navigate to="dashboard"/>}/>
+            <Route path="dashboard" element={<DashboardContent/>}/>
+            <Route path="health-records" element={<HealthRecord/>}/>
+            <Route path="health-records/add-pet" element={<AddPet/>}/>
+            <Route path="appointment" element={<Appointment/>}/>
+            <Route path="settings" element={<Setting/>}/>
+            <Route path="settings/edit-profile" element={<EditProfile/>}/>
+          </Routes>
+        </div>
+        {/* Add dashboard content here */}
       </div>
-      {/* Add dashboard content here */}
-    </div>
   )
 }
 
