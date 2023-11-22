@@ -7,10 +7,8 @@ const getAllPets = async () => {
     const response = await axios.get(BASE_URL);
     return response.data;
   } catch (error) {
-    // Handle the error here
     console.error('There was an error fetching the pets data', error);
   }
 };
 
-// Export other methods similarly
-export { getAllPets };
+export {getAllPets};
