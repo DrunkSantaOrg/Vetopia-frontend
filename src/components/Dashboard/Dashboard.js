@@ -1,7 +1,5 @@
-// an dashboard content component that renders the content of the dashboard
-
 import React from 'react'
-import './DashboardContent.css'
+import './Dashboard.css'
 import { useLocation } from 'react-router-dom'
 import { Breadcrumb } from 'antd'
 

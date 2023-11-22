@@ -1,6 +1,6 @@
 import React from 'react'
 import './EditProfile.css'
-import AddPetOwner from '../AddPetOwner'
+import AddPetOwner from '../AddPetOwner/AddPetOwner'
 const EditProfile = () => {
   const secNavBarList = [
     'My Profile',
