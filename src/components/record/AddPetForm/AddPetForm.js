@@ -197,7 +197,7 @@ const AddPetForm = ({petOwner}) => {
 
           <Row className="form-Row" gutter={[16, 16]}>
             <Col span={12} className="form-column">
-              <div className="form-label">Phone Number</div>
+              <div className="form-label">Microchip Number</div>
               <Form.Item
                 className="addPetFormItem"
                 name="microchipNumber"

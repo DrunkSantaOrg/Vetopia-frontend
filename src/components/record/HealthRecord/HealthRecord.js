@@ -58,7 +58,7 @@ const HealthRecord = () => {
 
 
   if (isPetLoading) {
-    return <ShowPet pets={pets} />
+    return <ShowPet petsList={pets} />
   } else {
     return (
       <div class="main-container">

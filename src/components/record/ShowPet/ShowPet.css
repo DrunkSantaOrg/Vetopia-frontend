@@ -1,9 +1,17 @@
 .show-pets-detail {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   padding: 1.25rem;
 
   height: 100%;
+  justify-content: space-between;
+}
+
+.show-pets-detail .add-pet-button-box {
+  position: absolute;
+  top: -3.25rem;
+  right: 2rem;
 }
 
 .pet-detail {
