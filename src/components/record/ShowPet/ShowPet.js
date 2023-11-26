@@ -1,8 +1,14 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
-import './ShowPetComp.css'
-import PetAvator from '../img/PetAvator.jpg'
+import './ShowPet.css'
+import PetAvator from '../../../img/PetAvator.jpg'
 const ShowPetComp = () => {
+  // get the petList from redux store
+
+  // const petList = useSelector((state) => state.petList)
+
+  // static petList for testing
   const petList = [
     {
       petAvatarUrl: PetAvator,

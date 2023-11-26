@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AddPetForm from '../AddPetForm/AddPetForm'
 import { useLocation } from 'react-router-dom'
 import { Breadcrumb, Button, Flex } from 'antd'
+import { useSelector } from 'react-redux'
 
 // import 当前文件夹的AddPet.module.css
 import './AddPet.css'
 
 
 const AddPetComp = () => {
+  const petOwner = useSelector((state) => state.petOwner)
+  
+  console.log("2:"+petOwner)
+
   let isFilledForm = false
+  
+  const handleOnFormFilled = (isFormFilled) => {
+    isFilledForm = isFormFilled
+  }
+
+  useEffect(() => {
+    console.log('isFilledForm: ' + isFilledForm)
+  }, [isFilledForm])
+
   const location = useLocation()
   const titlelist = location.pathname.slice(1).split('/')
   // replace - symbol
@@ -34,7 +48,7 @@ const AddPetComp = () => {
           <div class="avatar-change">Change image</div>
           <div class="avatar-remove">Remove</div>
         </div>
-        <AddPetForm />
+        <AddPetForm onFormFilled={handleOnFormFilled} petOwner={petOwner} />
       </div>
     </div>
   )

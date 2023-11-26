@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: row;
 
-  width: 75vw;
-  flex-shrink: 0;
+  flex: 1;
 
   border-radius: 0.5rem;
   background: #fff;
@@ -32,6 +31,10 @@
   padding: 0.5vw 1.5vw;
   align-items: center;
   gap: 0.625vw;
+}
+
+.settings-main .second-nav-bar .second-nav-bar-item.active {
+  background: var(--background-hoverbg, #F0EEF6);
 }
 
 .settings-main .second-nav-bar .second-nav-bar-item:hover {

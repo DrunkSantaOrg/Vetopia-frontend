@@ -1,11 +1,14 @@
 .topbar {
     flex: 0 0 auto;
     display: flex;
-    width: 75vw;
     height: 4.5rem;
     align-items: center;
     justify-content: space-between;
     background-color: #FFFFFF;
+  }
+
+  .topbar__search {
+    position: relative;
   }
   
   .topbar__search input {
@@ -13,7 +16,7 @@
     height: 2.5rem;
     flex-shrink: 0;
     margin-left: 1rem;
-    padding-left: 1rem;
+    padding-left: 2.5rem;
     border-radius: 0.5rem;
     background: #F6F6F6;
     /* cancel borderline */
@@ -25,6 +28,13 @@
 
   .topbar__search input:focus {
     outline: 2px solid #6B47BA;
+  }
+
+  .topbar__search .icon-Help_fill {
+    position: absolute;
+    top: 0.5rem;
+    left: 1.5rem;
+    color: #7A757F;
   }
 
   .topbar__info {
