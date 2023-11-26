@@ -36,7 +36,7 @@ const ShowPetComp = ({ petsList }) => {
       {petList.map((pet) => (
         <div className="pet-detail">
           <div className="pet-detail-inner">
-            <img src={pet.petAvatarUrl} alt="pet-avatar" />
+            <img src={PetAvator} alt="pet-avatar" />
             <div className="pet-detail-text">
               <div className="name-species">
                 <div className="petName">{pet.name}</div>

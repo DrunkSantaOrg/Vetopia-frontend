@@ -26,7 +26,7 @@ const HomePage = () => {
     <div className="main">
       <Sidebar />
       <div className="right-content">
-        <Topbar />
+        <Topbar className="topbar" />
         <div className="main-content">
           <HeadnBread />
           <Routes>
