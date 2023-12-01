@@ -4,7 +4,7 @@ import AddPetOwnerForm from '../AddPetOwnerForm/AddPetOwnerForm'
 import './AddPetOwner.css'
 
 const AddPetOwner = ({petOwner}) => {
-
+  console.log("5:"+petOwner)
   return (
       <div class="addpet-details">
         <div className="formbox">

@@ -1,13 +1,30 @@
 .main {
     display: flex;
-    
     min-height: 100vh;
     background: #FAFAFB;
 }
 
 
-.mainContent {
+
+
+.right-content {
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin-left: 2vw;
+    margin-left: 17rem;
+    flex: 1;
+}
+
+.topbar {
+    position: fixed;
+    z-index: 1;
+    width: -webkit-fill-available;
+}
+
+.main-content {
+    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin:4.5rem 1.25rem 1.25rem 1.25rem;
 }

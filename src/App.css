@@ -16,7 +16,7 @@
 
 body {
   margin: 0; /* Optionally, remove default margin for body */
-  overflow: hidden; /* Optionally, hide overflow to prevent scrolling */
+  overflow: auto; /* Optionally, hide overflow to prevent scrolling */
 }
 
 :root {

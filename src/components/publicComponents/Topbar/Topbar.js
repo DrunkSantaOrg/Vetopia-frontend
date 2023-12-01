@@ -7,6 +7,7 @@ const Topbar = () => {
     <div className="topbar">
       <div className="topbar__search">
         <input type="text" placeholder="Search" />
+        <span className="icon-Help_fill"></span>
       </div>
       
       <div className="topbar__info">
