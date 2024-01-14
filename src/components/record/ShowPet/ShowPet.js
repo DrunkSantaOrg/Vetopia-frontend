@@ -2,8 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
+
 import './ShowPet.css'
 import PetAvator from '../../../img/PetAvator.jpg'
+
+import ShowPetItem from '../ShowPetItem/ShowPetItem'
 const ShowPetComp = ({ petsList }) => {
   // get the petList from redux store
 
@@ -11,6 +14,9 @@ const ShowPetComp = ({ petsList }) => {
 
   // static petList for testing
   const [petList, setPetList] = React.useState(petsList)
+
+
+
 
   React.useEffect(() => {
     setPetList(petsList)
@@ -33,25 +39,11 @@ const ShowPetComp = ({ petsList }) => {
         </Link>
       </div>
       {/* use petList to create a list of pet detail */}
-      {petList.map((pet) => (
-        <div className="pet-detail">
-          <div className="pet-detail-inner">
-            <img src={PetAvator} alt="pet-avatar" />
-            <div className="pet-detail-text">
-              <div className="name-species">
-                <div className="petName">{pet.name}</div>
-                <div className="petSpecies">{pet.species}</div>
-              </div>
-              <div className="gender-age-weight">
-                <div className="gender-age">
-                  {pet.gender} | {pet.age} years old
-                </div>
-                <div className="petWeight">{pet.weight}kg</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      {petList.map((pet, index) => (
+        <ShowPetItem petId={pet.id}  pet={pet} key={index} />
       ))}
+
+  
     </div>
   )
 }
