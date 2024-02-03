@@ -6,10 +6,10 @@
     
     z-index: 1;
     padding: 0.75rem 1.25rem;
-    background-color: #f1f1f1;
+    background-color: #6750A4;
     overflow-x: hidden;
     padding-top: 1.25rem;
-    background: #FFFDFF;
+    background: #6750A4;
     box-shadow: 0.25rem,0.25rem,1rem, 0.56rem,  rgba(239, 239, 239, 0.40);
     flex-direction: column; 
     align-items: center;
@@ -38,7 +38,7 @@
 }
 
 .sidebar .logobox h3 {
-    color: #1C1B1E;
+    color: #FFF;
     /* title/bold */
     font-family: Roboto;
     font-size: 1.375rem;
@@ -63,7 +63,7 @@
 
 
 .sidebar .navigation .link-style div {
-    color: black;
+    color: #FFFFFF;
     display: flex;
     width: 12.5rem;
     padding: 0.75rem;
@@ -77,8 +77,8 @@
 }
 
 .sidebar .navigation .link-style.active div {
-    color: #FFFFFF !important;
-    background: #6B47BA;
+    color: #322015 !important;
+    background: #FAF9FC;
 }
 
 
@@ -95,7 +95,7 @@
     padding: 0.75rem;
     border-radius: 0.25rem;
 
-    color: #332D41;
+    color: #fff;
 
     /* body/primary/regular */
     font-family: Roboto;

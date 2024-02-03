@@ -43,8 +43,11 @@ const usePetsData = () => {
   const updatePetsData = async ( petId, petDetails) => {
     setIsPetLoading(true);
     try {
+      console.log("pet updating")
+      console.log(petId, petDetails)
       await updatePets(petId, petDetails);
       setIsPetLoading(false);
+      console.log("pet updated")
       return true;
     } catch (err) {
       console.error('Error updating pets:', err);

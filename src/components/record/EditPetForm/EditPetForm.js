@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useRef, useImperativeHandle } from 'react';
 import { useNavigate } from 'react-router-dom'
 import {
   Form,
@@ -16,7 +16,7 @@ import {
 import usePetsData from '../../../hooks/Pethook'
 
 
-import './AddPetForm.css'
+import './EditPetForm.css'
 
 const { Option } = Select
 
@@ -32,43 +32,33 @@ const weightSelectAfter = (
   </Select>
 )
 
-const AddPetForm = ({petOwner,pet=null}) => {
+const EditPetForm = ({onChange,petOwner,pet=null}) => {
   console.log("3:"+petOwner)
   const navigate = useNavigate()
   const { createPetsData } = usePetsData()
 
-  // // state to check if the form is filled
-  // const { form } = Form.useForm()
-  // // function to check if the form is filled
-  // const [isFormFilled, setIsFormFilled] = React.useState(false)
+  const form = Form.useForm()
 
-  // const checkFormFilled = async () => {
-  //   try {
-  //     await form.validateFields()
-  //     setIsFormFilled(true)
-  //     onFormFilled(true)
-  //     console.log('Success:')
-  //   } catch (err) {
-  //     setIsFormFilled(false)
-  //     onFormFilled(false)
-  //     console.log('Failed:' + err)
-  //   }
-  // }
-
-  // // useEffect to check if the form is filled on every change
-  // React.useEffect(() => {
-  //   checkFormFilled()
-  // }, [form])
+  const handleFormChange = () => {
+    // 获取表单数据
+    const formData = form.getFieldsValue();
+    console.log(formData)
+    // 通过回调更新父组件的表单数据
+    onChange(formData);
+  };
+  
 
   const onFinish = async (values) => {
-    try {
-      console.log(values, petOwner)
-      await createPetsData(petOwner.id, values);
-      message.success('Pet  creates successfully');
-      navigate('/home/health-records');
-    } catch (err) {
-      message.error('Error creating pet')
-    }
+    console.log("ok 3");
+    
+    // try {
+    //   console.log(values, petOwner)
+    //   await createPetsData(petOwner.id, values);
+    //   message.success('Pet  creates successfully');
+    //   navigate('/home/health-records');
+    // } catch (err) {
+    //   message.error('Error creating pet')
+    // }
   }
 
   return (
@@ -83,9 +73,10 @@ const AddPetForm = ({petOwner,pet=null}) => {
     >
       <Space>
         <Form
-          // form={form}
+          form={form}
           name="myForm"
           onFinish={onFinish}
+          onValuesChange={handleFormChange}
           labelCol={{ span: 8 }}
           wrapperCol={{ span: 16 }}
           className="myForm"
@@ -239,22 +230,11 @@ const AddPetForm = ({petOwner,pet=null}) => {
             </Col>
           </Row>
 
-          <Row className="form-Row">
-            <Col span={24}>
-              <Form.Item
-                className="addPetFormItem"
-                wrapperCol={{ offset: 1, span: 16 }}
-              >
-                <button type="primary" htmlType="submit">
-                  Submit
-                </button>
-              </Form.Item>
-            </Col>
-          </Row>
+         
         </Form>
       </Space>
     </ConfigProvider>
   )
 }
 
-export default AddPetForm
+export default EditPetForm
